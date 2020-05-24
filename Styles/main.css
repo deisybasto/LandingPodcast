@@ -953,30 +953,28 @@
   .novedades .ultimas-novedades-button-container a:hover {
     color: white;
   }
-}
-
-footer {
-  padding: 2% 4% 1% 4%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 14px;
-  color: black;
-  letter-spacing: 0;
-}
-
-footer .footer-icons-container a {
-  color: black;
-  padding-right: 10px;
-  padding-left: 20px;
+  footer {
+    padding: 2% 4% 1% 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0;
+  }
+  footer .footer-icons-container a {
+    color: black;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
 }
 
 * {
