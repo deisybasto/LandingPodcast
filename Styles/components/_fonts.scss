@@ -1,0 +1,49 @@
+@import  url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300&family=IBM+Plex+Sans:wght@300&display=swap');
+@mixin fonts-nav($color){
+ font-family:'IBM Plex Mono', monospace;
+ font-size:16px;    
+ color:$color;
+ text-decoration: none;
+}
+@mixin fonts-hover ($color) {
+    font-family:'IBM Plex Mono-Medium', monospace;
+    color:$color;
+    size:16px;
+    text-decoration:line-through;
+}
+@mixin fonts-active ($color) {
+    font-family:'IBM Plex Mono', monospace;
+    color:$color;
+    font-size:16px;
+    text-decoration:line-through;
+}
+@mixin fonts-tittle($color) {
+font-family: 'IBM Plex Sans', sans-serif;
+color:$color;
+letter-spacing: 0;
+line-height: 42px;
+font-size:26px;
+
+}
+@mixin fonts-section($color){
+ font-family:'IBM Plex Mono', monospace;
+ font-size:14px;    
+ color:$color;
+ letter-spacing: 0;
+
+ 
+}
+@mixin fonts-buttoms{
+    @include fonts-hover(black);
+    text-decoration:none;
+    font-size:18px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+@mixin fonts-topic{
+    font-family: 'IBM Plex Sans-SemiBold', sans-serif;
+    font-size: 16px;
+}
+

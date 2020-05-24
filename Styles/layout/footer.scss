@@ -1,0 +1,133 @@
+@import '../components/_fonts.scss';
+@import '../components/_buttoms.scss';
+
+/*-------mobile ultimas novedades-------*/
+@media screen and (max-width:1024px){
+   .novedades{
+    clip-path: polygon(0 25%, 100% 2%, 100% 100%, 0% 100%);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding-top:15%;
+       height:341px;
+       background-image:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+       padding-left:4%;
+       padding-right:4%;
+       & p{
+           @include fonts-tittle(white);
+           font-size:36px;
+           max-width:288px;
+           text-align: center;
+           letter-spacing: 0;
+           padding-bottom:10%;
+           
+       }
+       .ultimas-novedades-button-container{
+        @include button-mobile;
+        transition: all 1s;
+           
+            & a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color:white;
+
+                }
+            }
+            
+            &:hover{
+                border: blanchedalmond;
+                @include button-mobile-hover;
+            
+        }
+           
+       }
+   }
+/*---mobile footer----------*/
+@media screen and (max-width:1024px){
+   footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include fonts-section(black);
+      padding-top:5%;
+      padding-bottom:5%;
+      font-size:16px;
+
+      .footer-icons-container{
+          padding-top:5%;
+                   
+         & a{
+              color:black;
+              padding-right:10px;
+              padding-left:20px;
+         }
+
+      }
+   }
+}
+
+}
+/*-----desktop ultimas novedades---*/
+@media screen and (min-width:1025px){
+.novedades{
+    clip-path: polygon(0 25%, 100% 8%, 100% 100%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    padding:20% 10% 10% 30%;
+    
+    background-image:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    & p{
+        @include fonts-tittle(white);
+        font-size:48px;
+    }
+    .ultimas-novedades-button-container{
+        @include button-desktop;
+        height:50px;
+        width:345px;
+        margin-top:10%;
+        position: relative;
+        text-align:center;
+        transition: all 2s;
+        margin-left:20%;
+        
+       
+        &:hover{
+            @include button-mobile-hover;
+            width:400px;
+             color:white;
+        }
+
+        & a{
+            text-decoration: none;
+            color: black;
+            line-height:3;
+            &:hover{
+                color:white;
+
+            }
+
+    
+    }
+
+}
+}
+}
+footer{
+    padding:2% 4% 1% 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include fonts-section(black);
+    .footer-icons-container{
+       
+    & a{
+        color:black;
+        padding-right:10px;
+        padding-left:20px;
+   }
+}
+}
+

@@ -1,0 +1,83 @@
+@import '../components/_fonts.scss';
+@import'../components/_buttoms.scss';
+/*--------mobile section información-----------*/
+
+@media screen and (max-width:1024px){
+    .information{
+        display:flex;
+        flex-direction: column;
+        padding-top:10%;
+        padding-left:4%;
+        padding-right:5%;
+        clear: both;
+        box-sizing: border-box;
+                
+          & div:nth-child(1){
+            display:inline-block;
+            @include fonts-tittle( #060A24);
+            padding-bottom:5%;
+                                   
+        }
+        & div:nth-child(2){
+            @include fonts-section(black);
+            max-width: 393px;
+            padding-bottom:10%;
+        }
+    
+    .button-conoce{
+        @include button-mobile;
+        transition: all 1s;
+        &:hover{
+            @include button-mobile-hover;
+        }
+}
+}
+}
+/*--------desktop section información-----------*/
+@media screen and (min-width: 1025px){
+
+    .information{
+        padding-top:10%;
+        padding-left:10%;
+        position: relative;
+        padding-bottom:5%;
+                        
+          & div:nth-child(1){
+            display:flex;
+            flex-direction: row;
+            @include fonts-tittle( #060A24);
+            padding-bottom:2%;
+            font-size:36px;
+            & h1 + h1{
+               padding-left:1%;
+            }
+            & a{
+                color:#0000EC;
+            }
+                                   
+        }
+        & div:nth-child(2){
+            max-width:43.6%;
+            @include fonts-section(black);
+            padding-bottom:4%;
+           
+        }
+    
+    .button-conoce{
+        position: relative;
+        @include button-desktop;
+        transition: all 1s;
+        padding:1% 4%;
+        
+         &:hover{
+            @include button-mobile-hover;
+        }
+       
+     
+    }
+        
+
+        
+    }
+}
+    

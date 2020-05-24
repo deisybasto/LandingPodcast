@@ -1,0 +1,148 @@
+    @import '../components/_fonts.scss';
+        
+/*-----navegado del mobile---------*/
+@media screen and (max-width: 1024px) {
+    header{
+        position: relative;
+
+    }
+    nav{ 
+         padding-top: 2%;
+         display:flex;
+         flex-direction: column;
+         box-sizing: border-box;
+         width:100%;
+                
+        .checked{
+            position: relative;
+        }       
+         .container{
+             margin:0em;
+                                      
+                label{
+                    float: right;
+                    padding-right:6%;
+                    padding-bottom:2%;
+                    padding-top:1%;
+                                                            
+                    }
+                
+                img{
+                    padding-left:4%;
+                    line-height:50%;
+                    padding-bottom:2%;
+                }
+                .listar{
+                    width: 100%;
+                    padding-top:3%;
+                    background-color:#000ec0;
+                    transition-duration: 0.3s;
+                    visibility: visible;
+                    opacity: 1;
+
+                                        
+                 & ul { 
+                        margin-block-start: 0em;
+                        padding-top:0%;
+                        list-style-type:none;
+                        padding-inline-start:2%;
+                 
+                                                                    
+                    & li  {
+                      padding-bottom:10%;
+                      padding-left:2%;
+                      align-self: start;
+                      @include fonts-nav(white);
+                      & a{
+                        @include fonts-nav(white);
+                        text-decoration: none;
+                   
+                     
+                      &:hover{
+                        @include fonts-hover(#00f3bb);
+                      } 
+                      &:active{
+                          @include fonts-active(#050924);
+                      }                                                                
+                    }
+                } 
+                    
+                    
+                    }
+                }               
+             
+             #abrir-menu{
+                 display: none;
+                &  + label {
+                   display: none;
+                }
+                
+             }
+                
+              #abrir-menu:checked{
+                
+                 &  + label {
+                    display:block;
+                    }
+                 & + label + label{
+                    display: none;
+                }
+                & ~.listar{
+                    height:0;
+                    display:none;
+                    & ul{
+                    visibility: hidden;
+                    opacity: 0;
+                    }
+                }
+                
+            }
+        }
+                  
+        }
+              
+    }     
+    /*---------------Navegador del desktop--------------------*/
+    @media screen and (min-width: 1025px){
+        .container{
+            padding-left:5%;
+            padding-right:5%;
+            padding-top:1%;
+            
+            }
+        .listar{
+            width:50%;
+               
+        }
+        .checked{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           & input, label {
+               display: none;
+        
+           }
+            & ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                text-transform: uppercase;
+               & li{
+                @include fonts-nav(#060A24);
+               & a{
+                @include fonts-nav(#060A24);  
+               
+                &:hover{
+                    @include fonts-hover(#00f3bb);
+                }
+                &:active{
+                    @include fonts-active(#050924);
+
+                }
+               }
+            }
+            }
+        }
+         }           
+

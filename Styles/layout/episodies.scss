@@ -1,0 +1,185 @@
+@import '../components/_fonts.scss';
+/*-----mobile episodios---*/
+
+@media screen and (max-width:1024px){
+    .episodios{
+        margin-top:10%;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+        background-image:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        padding-bottom:50%;
+        clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 3%);
+        padding-top:5%;
+        p{
+            @include fonts-tittle(white);
+            font-size: 36px;
+            padding:20% 4% 3%;
+        }
+        .podcast{
+            padding:2% 4% ;
+         & iframe{
+             height:250px;
+             width:100%;
+         }     
+            
+        }
+
+    }
+    
+}
+/*--------desktop section información-----------*/
+@media screen and (min-width: 1025px){
+    .episodios{
+        background-image:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        position: relative;
+        width:100%;
+        height:60%;
+        padding-bottom:20%;
+        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
+    
+
+    & p{
+        @include fonts-tittle(white);
+        font-size: 36px;
+        padding:10% 10% 4%;
+    }
+    .podcast{
+        padding:0% 4% 4% 4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        
+     & iframe{
+         width:40.6%;
+         height:232px;
+     }
+     & iframe:nth-child(3), iframe:nth-child(4){
+         padding-top:6%;
+     }
+    
+    }
+
+
+}
+}
+
+/*------mobile de donde venimos---------*/
+
+@media screen and (max-width:767px){
+.celular{
+    display: flex;
+    flex-direction: column;
+     padding-top: 120%;
+     padding-bottom:10%;
+    & .img-over{
+        width:100%;
+        align-items: center;
+        & img{
+            width:100%;
+            position:absolute;
+            top:97em;
+           }
+               
+}
+    & .p-info{
+        padding:0% 4% 0% 4%;
+
+        & p:nth-child(1){
+            @include fonts-tittle(#060A24);
+            padding-bottom:4%;
+            font-size:36px;
+            max-width:200px;
+            font-weight: bold;
+        }
+        & p:nth-child(2), p:nth-child(3){
+            @include fonts-section(#060A24);
+            text-align: justify;
+            padding-right:4%;
+        }
+        & p:nth-child(3){
+            padding-top:4%;
+        }
+
+    }
+}
+}
+/*------tablet de donde venimos---------*/
+@media screen and (min-width:768px) and (max-width:1023px){
+.celular{
+    display: flex;
+    flex-direction: column;
+     padding-top: 120%;
+    & .img-over{
+        width:100%;
+        align-items: center;
+        & img{
+            width:100%;
+            position:absolute;
+            top:120em;
+           }
+               
+}
+    & .p-info{
+        padding:0% 4% 0% 4%;
+
+        & p:nth-child(1){
+            @include fonts-tittle(#060A24);
+            padding-bottom:4%;
+            font-size:36px;
+            max-width:200px;
+            font-weight: bold;
+        }
+        & p:nth-child(2), p:nth-child(3){
+            @include fonts-section(#060A24);
+            text-align: justify;
+            padding-right:4%;
+        }
+        & p:nth-child(3){
+            padding-top:4%;
+        }
+
+    }
+}
+}
+
+/*------tablet de donde venimos---------*/
+@media screen and (min-width:1024px) {
+    .celular{
+        display: flex;
+        flex-direction:row;
+        padding-bottom:10%;
+        & .img-over{
+            position: absolute;
+            top:80em;
+            left:15em;
+            & img{
+                width:50%;
+                
+                }
+        }
+        
+        .p-info{
+            width:464px;
+            position: relative;
+            left:40rem;
+            & p:nth-child(1){
+                @include fonts-tittle(#060A24);
+                padding-bottom:4%;
+                font-weight: bold;
+            }
+            & p:nth-child(2), p:nth-child(3){
+                @include fonts-section(#060A24);
+                text-align:left;
+                               
+            }
+            & p:nth-child(3){
+                padding-top:4%;
+            }
+            
+        }
+    }
+
+
+}
+

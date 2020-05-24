@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300&family=IBM+Plex+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300&family=IBM+Plex+Sans:wght@300&display=swap");
+/*--------mobile section información-----------*/
+@media screen and (max-width: 1024px) {
+  .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 10%;
+    padding-left: 4%;
+    padding-right: 5%;
+    clear: both;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .information div:nth-child(1) {
+    display: inline-block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-size: 26px;
+    padding-bottom: 5%;
+  }
+  .information div:nth-child(2) {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0;
+    max-width: 393px;
+    padding-bottom: 10%;
+  }
+  .information .button-conoce {
+    background-color: #00F3BB;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    color: black;
+    size: 16px;
+    text-decoration: line-through;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .information .button-conoce:hover {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    color: black;
+    size: 16px;
+    text-decoration: line-through;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  }
+}
+
+/*--------desktop section información-----------*/
+@media screen and (min-width: 1025px) {
+  .information {
+    padding-top: 10%;
+    padding-left: 10%;
+    position: relative;
+    padding-bottom: 5%;
+  }
+  .information div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-size: 26px;
+    padding-bottom: 2%;
+    font-size: 36px;
+  }
+  .information div:nth-child(1) h1 + h1 {
+    padding-left: 1%;
+  }
+  .information div:nth-child(1) a {
+    color: #0000EC;
+  }
+  .information div:nth-child(2) {
+    max-width: 43.6%;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0;
+    padding-bottom: 4%;
+  }
+  .information .button-conoce {
+    position: relative;
+    background-color: #00F3BB;
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    line-height: 24px;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    color: black;
+    size: 16px;
+    text-decoration: line-through;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    padding: 1% 4%;
+  }
+  .information .button-conoce:hover {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    color: black;
+    size: 16px;
+    text-decoration: line-through;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  }
+}
+/*# sourceMappingURL=information.css.map */

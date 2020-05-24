@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300&family=IBM+Plex+Sans:wght@300&display=swap");
+/*-----mobile episodios---*/
+@media screen and (max-width: 1024px) {
+  .episodios {
+    margin-top: 10%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    padding-bottom: 50%;
+    -webkit-clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 3%);
+            clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 3%);
+    padding-top: 5%;
+  }
+  .episodios p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-size: 26px;
+    font-size: 36px;
+    padding: 20% 4% 3%;
+  }
+  .episodios .podcast {
+    padding: 2% 4%;
+  }
+  .episodios .podcast iframe {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+/*--------desktop section información-----------*/
+@media screen and (min-width: 1025px) {
+  .episodios {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    position: relative;
+    width: 100%;
+    height: 60%;
+    padding-bottom: 20%;
+    -webkit-clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
+            clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
+  }
+  .episodios p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-size: 26px;
+    font-size: 36px;
+    padding: 10% 10% 4%;
+  }
+  .episodios .podcast {
+    padding: 0% 4% 4% 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .episodios .podcast iframe {
+    width: 40.6%;
+    height: 232px;
+  }
+  .episodios .podcast iframe:nth-child(3), .episodios .podcast iframe:nth-child(4) {
+    padding-top: 6%;
+  }
+}
+
+/*------mobile de donde venimos---------*/
+@media screen and (max-width: 767px) {
+  .celular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 120%;
+    padding-bottom: 10%;
+  }
+  .celular .img-over {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .celular .img-over img {
+    width: 100%;
+    position: absolute;
+    top: 97em;
+  }
+  .celular .p-info {
+    padding: 0% 4% 0% 4%;
+  }
+  .celular .p-info p:nth-child(1) {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-size: 26px;
+    padding-bottom: 4%;
+    font-size: 36px;
+    max-width: 200px;
+    font-weight: bold;
+  }
+  .celular .p-info p:nth-child(2), .celular .p-info p:nth-child(3) {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: justify;
+    padding-right: 4%;
+  }
+  .celular .p-info p:nth-child(3) {
+    padding-top: 4%;
+  }
+}
+
+/*------tablet de donde venimos---------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .celular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 120%;
+  }
+  .celular .img-over {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .celular .img-over img {
+    width: 100%;
+    position: absolute;
+    top: 120em;
+  }
+  .celular .p-info {
+    padding: 0% 4% 0% 4%;
+  }
+  .celular .p-info p:nth-child(1) {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-size: 26px;
+    padding-bottom: 4%;
+    font-size: 36px;
+    max-width: 200px;
+    font-weight: bold;
+  }
+  .celular .p-info p:nth-child(2), .celular .p-info p:nth-child(3) {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: justify;
+    padding-right: 4%;
+  }
+  .celular .p-info p:nth-child(3) {
+    padding-top: 4%;
+  }
+}
+
+/*------tablet de donde venimos---------*/
+@media screen and (min-width: 1024px) {
+  .celular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 10%;
+  }
+  .celular .img-over {
+    position: absolute;
+    top: 80em;
+    left: 15em;
+  }
+  .celular .img-over img {
+    width: 50%;
+  }
+  .celular .p-info {
+    width: 464px;
+    position: relative;
+    left: 40rem;
+  }
+  .celular .p-info p:nth-child(1) {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-size: 26px;
+    padding-bottom: 4%;
+    font-weight: bold;
+  }
+  .celular .p-info p:nth-child(2), .celular .p-info p:nth-child(3) {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .celular .p-info p:nth-child(3) {
+    padding-top: 4%;
+  }
+}
+/*# sourceMappingURL=episodies.css.map */
