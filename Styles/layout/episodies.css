@@ -18,7 +18,7 @@
             clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 3%);
     padding-top: 5%;
   }
-  .episodios p {
+  .episodios .title-font-white {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
     letter-spacing: 0;
@@ -49,7 +49,7 @@
     -webkit-clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
             clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
   }
-  .episodios p {
+  .episodios .title-font-white {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
     letter-spacing: 0;
@@ -102,7 +102,7 @@
   .celular .img-over img {
     width: 100%;
     position: absolute;
-    top: 97em;
+    top: 94em;
   }
   .celular .p-info {
     padding: 0% 4% 0% 4%;
@@ -152,7 +152,7 @@
   .celular .img-over img {
     width: 100%;
     position: absolute;
-    top: 120em;
+    top: 115em;
   }
   .celular .p-info {
     padding: 0% 4% 0% 4%;
