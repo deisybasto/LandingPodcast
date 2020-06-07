@@ -350,8 +350,10 @@
     padding: 2% 4%;
   }
   .episodios .podcast iframe {
-    height: 250px;
     width: 100%;
+    height: 232px;
+    border: 0px;
+    background-color: transparent;
   }
 }
 
@@ -388,7 +390,9 @@
   }
   .episodios .podcast iframe {
     width: 40.6%;
-    height: 232px;
+    height: 250px;
+    border: 0px transparent;
+    background-color: transparent;
   }
   .episodios .podcast iframe:nth-child(3), .episodios .podcast iframe:nth-child(4) {
     padding-top: 6%;
